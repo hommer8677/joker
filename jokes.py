@@ -24,7 +24,7 @@ def getJoke() -> str:
                 
                 formatted_text = text.replace(" -", "\n-").replace(" —", "\n—")
                 
-                res.append(resText)
+                res.append(formatted_text)
         else: 
             print(f"Ошибка сервера. Статус-код: {response.status_code}")
 
