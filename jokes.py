@@ -22,7 +22,7 @@ def getJoke() -> str:
                 if not text: continue
                 if "Самые смешные" in text or "Добро пожаловать" in text: continue
                 
-                formatted_text = text.replace(" -", "\n-").replace(" —", "\n—")
+                formatted_text = text.replace(" -", "\n-").replace(" —", "\n—").replace(":—",":\n—") 
                 
                 res.append(formatted_text)
         else: 
